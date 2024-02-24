@@ -4,8 +4,10 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: Tailwind Typography @tailwindcss/typography & Prose
-featured_image: ../assets/images/featured/featured-img-placeholder.png
 ---
+<!--featured_image: ../assets/images/featured/featured-img-placeholder.png
+---
+
 ## @tailwindcss/typography
 [View on GitHub](https://github.com/tailwindlabs/tailwindcss-typography)!
 
@@ -203,7 +205,6 @@ In those cases, all you need to do is add max-w-none to your content to override
 ```
 <div class="grid grid-cols-4">
   <div class="col-span-1">
-    <!-- ... -->
   </div>
   <div class="col-span-3">
     <article class="prose max-w-none">
@@ -224,11 +225,10 @@ If you have a block of markup embedded in some content that shouldn’t inherit 
   <p>...</p>
 
   <div class="not-prose">
-    <!-- Some example or demo that needs to be prose-free -->
+    <!-- Some example or demo that needs to be prose-free
   </div>
 
   <p>...</p>
-  <!-- ... -->
 </article>
 ```
 
@@ -314,11 +314,10 @@ Now every instance of prose in the default class names will be replaced by your 
     <p>...</p>
 
     <div class="not-wysiwyg">
-      <!-- Some example or demo that needs to be prose-free -->
+      <!-- Some example or demo that needs to be prose-free
     </div>
 
     <p>...</p>
-    <!-- ... -->
   </article>
 ```
 
@@ -377,3 +376,5 @@ module.exports = {
 Customizations should be applied to a specific modifier like DEFAULT or xl, and must be added under the css property. Customizations are authored in the same CSS-in-JS syntax used to write Tailwind plugins.
 
 See the default styles for this plugin for more in-depth examples of configuring each modifier.
+
+-->

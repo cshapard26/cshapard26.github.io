@@ -1,4 +1,4 @@
----
+<!-----
 title: "News Post 1"
 date: 2022-05-18T11:10:36+08:00
 draft: false
@@ -11,6 +11,7 @@ authorimage: ../assets/images/global/author.webp
 categories: News
 tags: News
 ---
+<!--
 __Advertisement :smile:__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
@@ -255,3 +256,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
+ -->

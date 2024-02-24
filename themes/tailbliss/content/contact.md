@@ -6,7 +6,7 @@ language: en
 description: A test with @tailwindcss/typography & Prose
 ---
 
-<!-- @format -->
+<!-- @format
 
 <section class="lg:pb-24">
   <div class="max-w-screen-md px-4 mx-auto">
@@ -30,3 +30,4 @@ description: A test with @tailwindcss/typography & Prose
       </form>
   </div>
 </section>
+ -->
