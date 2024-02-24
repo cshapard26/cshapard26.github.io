@@ -1,0 +1,4 @@
+baseURL = 'https://coopshap.com/'
+languageCode = 'en-us'
+title = 'Coop Academy'
+theme = 'tailbliss'
