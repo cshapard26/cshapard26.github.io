@@ -1,4 +1,4 @@
 baseURL = 'https://coopshap.com/'
 languageCode = 'en-us'
-title = 'Under Construction. For labs, go to https://coopshap.com/ECE1181/'
+title = 'Under Construction. For labs, go to www.coopshap.com/ECE1181/ (you do need the www or else it won't work)'
 theme = 'tailbliss'
