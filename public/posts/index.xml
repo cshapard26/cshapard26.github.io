@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Under Construction. For labs, go to https://coopshap.com/ECE1181/</title>
+    <title>Posts on Under Construction. For labs, go to www.coopshap.com/ECE1181/</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Under Construction. For labs, go to https://coopshap.com/ECE1181/</description>
+    <description>Recent content in Posts on Under Construction. For labs, go to www.coopshap.com/ECE1181/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2024 23:02:03 -0600</lastBuildDate>
