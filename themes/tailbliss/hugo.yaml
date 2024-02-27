@@ -52,7 +52,7 @@ params:
   moto: "Under Construction"
   description: "For Lab section, visit https://www.coopshap.com/ECE1181/"
   disable_theme_toggle: false
-  disable_stay_uptodate: false
+  disable_stay_uptodate: true
 
   p1:
     heading: "Our mission"
@@ -108,62 +108,30 @@ params:
     twitter:
       enabled: false
       url: '@nusserstudios'
+    kofi:
+      enabled: true
+      url: 'https://ko-fi.com/coopshap'
 
 menu:
   main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 20
-    - identifier: categories
+    - identifier: labcategories
       pre: dropdown
-      name: Categories
-      weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
-      weight: 40
-    - identifier: coolio
-      pre: complexdropdown
-      name: Coolio
-      weight: 15
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
-  categories:
-    - identifier: prose
-      name: Prose
-      url: /prose/
+      name: Labs
       weight: 10
     - identifier: about
       name: About
       url: /about/
+      weight: 50
+    - identifier: projects
+      name: Projects
+      url: /projects/
       weight: 20
-  dropdown:
-    - identifier: appearance
-      pre: stars # can be stars, comments or piechart
-      name: Appearance
-      post: "Easy customization"
-      url: "#"
+  labcategories:
+    - identifier: ece1181
+      name: ECE1181
+      url: '/ECE1181/'
       weight: 10
-    - identifier: comments
-      pre: comments # can be stars, comments or piechart
-      name: Comments
-      post: "Check your latest comments"
-      url: "#"
-      weight: 20
-    - identifier: analytics
-      pre: piechart # can be stars, comments or piechart
-      name: Analytics
-      post: "Take a look at your statistics"
-      url: "#"
-      weight: 30
-  coolio:
+  dropdown:
     - identifier: appearance
       pre: stars # can be stars, comments or piechart
       name: Appearance
@@ -189,20 +157,17 @@ menu:
       weight: 10
     - identifier: blog
       name: Blog
-      url: /categories/blog/
+      url: /blog/
       weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
+    - identifier: rules
+      name: Morals
+      url: /morals/
+      weight: 20
+    - identifier: funding
+      name: Donate
+      url: https://ko-fi.com/coopshap
+      weight: 100
+
 
 markup:
   goldmark:
