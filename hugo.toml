@@ -1,6 +1,4 @@
-baseURL = 'https://coopshap.com/'
+baseURL = 'https://www.coopshap.com/'
 languageCode = 'en-us'
-title = 'Coop Academy'
+title = 'CooperSense'
 theme = 'tailbliss'
-
-params = {moto = 'Under Construction', description = 'For Lab section, visit https://www.coopshap.com/ECE1181/', social_media = {github = {enabled = false}}}

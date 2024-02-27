@@ -1,5 +1,5 @@
 baseURL: ''
-title: TailBliss
+title: CooperSense
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -46,11 +46,11 @@ markup:
       xhtml: false
 
 params:
-  author: Nusser Studios
+  author: Cooper Shapard
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  moto: "Under Construction"
+  description: "For Lab section, visit https://www.coopshap.com/ECE1181/"
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
@@ -98,17 +98,16 @@ params:
   social_media:
     github:
       enabled: true
-      url: 'https://github.com/nusserstudios'
+      url: 'https://github.com/cshapard26'
     facebook:
-      enabled: true
+      enabled: false
       url: 'https://facebook.com/nusserstudios'
     instagram:
-      enabled: true
+      enabled: false
       url: 'https://instagram.com/nusserstudios'
     twitter:
-      enabled: true
+      enabled: false
       url: '@nusserstudios'
-    
 
 menu:
   main:
@@ -128,6 +127,10 @@ menu:
       pre: complexdropdown
       name: Dropdown
       weight: 40
+    - identifier: coolio
+      pre: complexdropdown
+      name: Coolio
+      weight: 15
     - identifier: contact
       name: Contact
       url: /contact/
@@ -142,6 +145,25 @@ menu:
       url: /about/
       weight: 20
   dropdown:
+    - identifier: appearance
+      pre: stars # can be stars, comments or piechart
+      name: Appearance
+      post: "Easy customization"
+      url: "#"
+      weight: 10
+    - identifier: comments
+      pre: comments # can be stars, comments or piechart
+      name: Comments
+      post: "Check your latest comments"
+      url: "#"
+      weight: 20
+    - identifier: analytics
+      pre: piechart # can be stars, comments or piechart
+      name: Analytics
+      post: "Take a look at your statistics"
+      url: "#"
+      weight: 30
+  coolio:
     - identifier: appearance
       pre: stars # can be stars, comments or piechart
       name: Appearance

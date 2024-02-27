@@ -1,4 +1,5 @@
-<!-----
+<!--
+---
 title: "News Post 1"
 date: 2022-05-18T11:10:36+08:00
 draft: false
@@ -252,8 +253,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 *[HTML]: Hyper Text Markup Language
 
 ### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
- -->
+-->

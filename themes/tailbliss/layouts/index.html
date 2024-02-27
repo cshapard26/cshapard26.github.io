@@ -14,7 +14,7 @@
                         {{ .Site.Params.Description}}
                     </p>
                 </div>
-                <!--<div class="col-span-6">
+                <div class="col-span-6">
                     {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.png" }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
@@ -23,12 +23,11 @@
                     <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
                         {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
-                </div>-->
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- 
 
     <div class="relative my-4">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
@@ -266,6 +265,6 @@
         </div>
     </div>
     {{ end }}
-    More main page content here... -->
+    More main page content here...
 </main>
 {{ end }}
