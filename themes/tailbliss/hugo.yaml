@@ -105,9 +105,9 @@ params:
     instagram:
       enabled: false
       url: 'https://instagram.com/nusserstudios'
-    twitter:
-      enabled: false
-      url: '@nusserstudios'
+    linkedin:
+      enabled: true
+      url: 'https://www.linkedin.com/in/coopershapard/'
     kofi:
       enabled: true
       url: 'https://ko-fi.com/coopshap'
@@ -118,6 +118,9 @@ menu:
       pre: dropdown
       name: Labs
       weight: 10
+    - identifier: blog
+      name: Blog
+      weight: 30
     - identifier: about
       name: About
       url: /about/
