@@ -49,7 +49,7 @@ params:
   author: Cooper Shapard
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Under Construction"
+  moto: "Site Under Construction"
   description: "For Lab section, visit ECE1181 in the Labs tab"
   disable_theme_toggle: false
   disable_stay_uptodate: true
