@@ -1,9 +1,9 @@
 ---
 title: About
-date: 2021-12-18T03:10:36.000Z
+date: 2023-12-18T03:10:36.000Z
 draft: false
 language: en
-description: A test with @tailwindcss/typography & Prose
+description: About me
 ---
 
-A Test
+This is where I would tell you about the website and why I built it.

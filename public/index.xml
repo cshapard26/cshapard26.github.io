@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CooperSense</title>
-    <link>http://localhost:33609/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on CooperSense</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2024 23:02:03 -0600</lastBuildDate>
-    <atom:link href="http://localhost:33609/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Second Post</title>
-      <link>http://localhost:33609/posts/my-first-post/</link>
+      <title>A Test Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Fri, 23 Feb 2024 23:02:03 -0600</pubDate>
-      <guid>http://localhost:33609/posts/my-first-post/</guid>
-      <description>Let&amp;rsquo;s give this a shot.&#xA;Intro to ECE 2 4 .global _start _start: LDR R1, =_test MOV R3, 0x0, LSL 2 STR R0, [R1, 2] R16 [222jflks, 0]! _test: 2 .data _test: .ascii &amp;#34;Nope!&amp;#34; x /4ubfx 0x20098 </description>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>Formatting Example:&#xA;.global _start _start: LDR R1, =_test MOV R3, #0x1, LSL 2 STR R0, [R1, #0x2]! ADD R2, R1, R3 .data _test: .ascii &amp;#34;Test!&amp;#34; </description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:33609/about/</link>
-      <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
-      <guid>http://localhost:33609/about/</guid>
-      <description>A Test</description>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 18 Dec 2023 03:10:36 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>This is where I would tell you about the website and why I built it.</description>
     </item>
     <item>
-      <title>Contact</title>
-      <link>http://localhost:33609/contact/</link>
+      <title>Blog</title>
+      <link>http://localhost:1313/posts/blog/</link>
       <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
-      <guid>http://localhost:33609/contact/</guid>
-      <description> </description>
+      <guid>http://localhost:1313/posts/blog/</guid>
+      <description>Here is where I would store my posts. I may not have a blog in the final website, but it&amp;rsquo;s here for now</description>
     </item>
     <item>
-      <title>Prose</title>
-      <link>http://localhost:33609/prose/</link>
-      <pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate>
-      <guid>http://localhost:33609/prose/</guid>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>This is where I would put my collection of projects. </description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/blog-post-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blog-post-1/</guid>
       <description> </description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:33609/posts/blog-post-1/</link>
+      <link>http://localhost:1313/posts/news-post-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:33609/posts/blog-post-1/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:33609/posts/news-post-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:33609/posts/news-post-1/</guid>
+      <guid>http://localhost:1313/posts/news-post-1/</guid>
       <description> </description>
     </item>
   </channel>

@@ -50,29 +50,29 @@ params:
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
   moto: "Under Construction"
-  description: "For Lab section, visit https://www.coopshap.com/ECE1181/"
+  description: "For Lab section, visit ECE1181 in the Labs tab"
   disable_theme_toggle: false
   disable_stay_uptodate: true
 
   p1:
-    heading: "Our mission"
-    image: "images/pages/our-mission.png"
+    heading: "Placeholder"
+    image: "images/pages/frog.png"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
-      - text: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."
-      - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
+      - text: "In the meantime, enjoy this frog."
   p2:
-    heading: "Just in time for Hacktoberfest with JIT Tailwind."
-    image: "images/pages/hacktoberfest.jpg"
+    heading: "I'll probably put a project here"
+    image: "images/pages/cube.png"
     content:
-      - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at purus non enim commodo tincidunt vel in nulla. Aenean pretium dolor non ultricies bibendum. Etiam quis blandit enim. Nunc condimentum ut lorem in faucibus. Phasellus varius ligula et commodo tristique. Nunc sodales nisl nec laoreet vehicula. Donec velit nibh, sollicitudin at nulla a, egestas dignissim eros. Sed lacinia hendrerit interdum. Vestibulum pellentesque sem venenatis nisl tempor accumsan sit amet tempus felis. Mauris leo diam, porttitor nec bibendum id, tempus ac nulla. Etiam congue ornare erat at convallis. Donec in nisi dapibus, mattis risus vel, imperdiet enim. Donec fermentum sit amet tortor nec tincidunt. Nam nec lectus tortor. Nunc sit amet laoreet orci, porta ornare massa. Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim arcu eleifend."
+      - text: "But that's for a later time."
+      - text: ""
+  
   p3:
     heading: "Backed by world-renowned investors"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
+      - text: "I don't actually have any, but check out this logo I made. It's the initials CS, but it looks like a fish or something."
     links:
       - text: Meet our investors and advisors
-        url: "#"
+        url: "https://bongo.cat"
     logos:
       - identifier: a
         image: "images/global/sample-logo.svg"
@@ -85,7 +85,7 @@ params:
   p4:
     heading: "From the blog"
     content:
-      - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
+      - text: "Here is where I would put my blog posts, if I actually had any."
   p5:
     heading: "Stay Up to Date"
     content:
@@ -120,6 +120,7 @@ menu:
       weight: 10
     - identifier: blog
       name: Blog
+      url: /blog/
       weight: 30
     - identifier: about
       name: About
@@ -132,7 +133,7 @@ menu:
   labcategories:
     - identifier: ece1181
       name: ECE1181
-      url: '/ECE1181/'
+      url: 'https://www.coopshap.com/ECE1181/'
       weight: 10
   dropdown:
     - identifier: appearance
