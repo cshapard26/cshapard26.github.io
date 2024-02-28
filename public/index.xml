@@ -24,9 +24,9 @@
     </item>
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/posts/blog/</link>
+      <link>http://localhost:1313/blog/</link>
       <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blog/</guid>
+      <guid>http://localhost:1313/blog/</guid>
       <description>Here is where I would store my posts. I may not have a blog in the final website, but it&amp;rsquo;s here for now</description>
     </item>
     <item>
@@ -35,6 +35,13 @@
       <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
       <guid>http://localhost:1313/projects/</guid>
       <description>This is where I would put my collection of projects. </description>
+    </item>
+    <item>
+      <title>Morals</title>
+      <link>http://localhost:1313/morals/</link>
+      <pubDate>Fri, 18 Dec 2020 03:10:36 +0000</pubDate>
+      <guid>http://localhost:1313/morals/</guid>
+      <description>Nothing here yet</description>
     </item>
     <item>
       <title></title>
