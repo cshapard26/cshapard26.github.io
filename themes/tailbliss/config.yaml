@@ -60,18 +60,22 @@ params:
     url: https://github.com/cshapard26/steno-anki-engine
     content:
       - text: "Steno-Anki engine is a CLI tool that efficiently parses, decodes, and creates stenographic briefs to export in a format that Anki natively supports."
-      - text: "Originally built to manage Clippy2 files for Plover, it was later extended to support custom dictionaries, phoneticize results, and use a custom-tuned GPT model to generate custom briefs."
+      - text: "Originally built to manage Clippy2 files for Plover, it was later extended to support custom dictionaries, phoneticize results, and use a fine-tuned GPT model to generate custom briefs."
       - text: "Useful for both beginning and advanced stenographers to help improve speed and reduce the toil of brief creation and memorization."
     links:
       - text: Go give it a ⭐ on GitHub!
         url: "https://github.com/cshapard26/steno-anki-engine"
 
   p2:
-    heading: "I'll probably put a project here"
-    image: "images/pages/cube.png"
+    heading: "Membrane"
+    image: "images/pages/Membrane.png"
+    url: https://github.com/cshapard26/Membrane
     content:
-      - text: "But that's for a later time."
-      - text: ""
+      - text: "Lets see"
+      - text: "if this"
+    links:
+      - text: "fixes it"
+        url: 
   
   p3:
     heading: "Backed by world-renowned investors"
@@ -131,7 +135,7 @@ menu:
       weight: 30
     - identifier: about
       name: Courses
-      url: /test/
+      url: /courses/
       weight: 20
     - identifier: projects
       name: Projects
