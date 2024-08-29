@@ -5,7 +5,18 @@
             <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
                 <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
                     <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white">
-                        {{ .Site.Title }}
+                              <div class="inner-headings">
+                                <span>
+                                  CooperSense <br />
+                                  ComputerScience <br />
+                                  CircuitSynthesis <br />
+                                  CyberSecurity <br />
+                                  CourtStenography <br />
+                                  ChordStructure <br />
+                                  CoopShap <br />
+                                  CS <br />
+                                </span>
+                            </div>
                     </h1>
                     <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
                         {{ .Site.Params.Moto }}
@@ -44,26 +55,37 @@
                 </div>
                 <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
                     <div class="overflow-hidden shadow-xl rounded-2xl">
-                        {{ $p1image := resources.Get .Site.Params.P1.Image }}
-                        {{ with $p1image }}
-                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
-                        {{ end }}
-                        {{ end }}
+                        <a href="{{ .Site.Params.P1.URL }}">
+                            {{ $p1image := resources.Get .Site.Params.P1.Image }}
+                            {{ with $p1image }}
+                            {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
+                            <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                            {{ end }}
+                            {{ end }}
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
                 <div class="md:pt-12 sm:pt-6 lg:pt-20">
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
-                        {{ .Site.Params.P1.Heading }}
-                    </h2>
+                    <a href="{{ .Site.Params.P1.URL }}" class="text-base font-medium text-primary-400 dark:text-primary-100">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+                            {{ .Site.Params.P1.Heading }}
+                        </h2>
+                    </a>
                     <div class="mt-6 text-gray-900 dark:text-white">
                         <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
                             {{ range .Site.Params.P1.Content }}
                             <p class="text-lg text-gray-900 dark:text-white">
                                 {{ .text }}
                             </p>
+                            {{ end }}
+                            {{ range .Site.Params.P1.Links }}
+                            <div class="my-6">
+                                <a href="{{ .url }}" class="text-base font-medium text-primary-400 dark:text-primary-100">
+                                    {{ .text }}&nbsp&rarr;
+                                </a>
+                            </div>
                             {{ end }}
                         </div>
                     </div>

@@ -14,7 +14,7 @@ enableInlineShortcodes: true
 markup:
   goldmark:
     extensions:
-      definitionList: true
+      definitionList: true 
       footnote: true
       linkify: true
       linkifyProtocol: https
@@ -55,10 +55,17 @@ params:
   disable_stay_uptodate: true
 
   p1:
-    heading: "Placeholder"
-    image: "images/pages/frog.png"
+    heading: "Steno-Anki Engine"
+    image: "images/pages/StenoAnki.png"
+    url: https://github.com/cshapard26/steno-anki-engine
     content:
-      - text: "In the meantime, enjoy this frog."
+      - text: "Steno-Anki engine is a CLI tool that efficiently parses, decodes, and creates stenographic briefs to export in a format that Anki natively supports."
+      - text: "Originally built to manage Clippy2 files for Plover, it was later extended to support custom dictionaries, phoneticize results, and use a custom-tuned GPT model to generate custom briefs."
+      - text: "Useful for both beginning and advanced stenographers to help improve speed and reduce the toil of brief creation and memorization."
+    links:
+      - text: Go give it a ⭐ on GitHub!
+        url: "https://github.com/cshapard26/steno-anki-engine"
+
   p2:
     heading: "I'll probably put a project here"
     image: "images/pages/cube.png"
@@ -109,7 +116,7 @@ params:
       enabled: true
       url: 'https://www.linkedin.com/in/coopershapard/'
     kofi:
-      enabled: true
+      enabled: false
       url: 'https://ko-fi.com/coopshap'
 
 menu:
@@ -123,13 +130,13 @@ menu:
       url: /blog/
       weight: 30
     - identifier: about
-      name: About
-      url: /about/
-      weight: 50
+      name: Courses
+      url: /test/
+      weight: 20
     - identifier: projects
       name: Projects
       url: /projects/
-      weight: 20
+      weight: 40
   labcategories:
     - identifier: ece1181
       name: ECE1181
@@ -159,17 +166,13 @@ menu:
       name: About
       url: /about/
       weight: 10
-    - identifier: blog
-      name: Blog
-      url: /blog/
-      weight: 20
     - identifier: rules
-      name: Morals
-      url: /morals/
+      name: Policy
+      url: /policy/
       weight: 20
     - identifier: funding
       name: Donate
-      url: https://ko-fi.com/coopshap
+      url: https://venmo.com/the-singularity
       weight: 100
 
 
