@@ -49,9 +49,9 @@ params:
   author: Cooper Shapard
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Site Under Construction"
+  moto: "Portfolio and More, v1.0.3"
   description: "For Lab section, visit ECE1181 in the Labs tab"
-  disable_theme_toggle: false
+  disable_theme_toggle: true
   disable_stay_uptodate: true
 
   p1:
@@ -71,32 +71,33 @@ params:
     image: "images/pages/Membrane.png"
     url: https://github.com/cshapard26/Membrane
     content:
-      - text: "Lets see"
-      - text: "if this"
+      - text: "Membrane, a.k.a MembraneChain, is a blockchain-based solution to securely and transparently share research data. By using technologies such as Zero-Knowledge Proofs, One-Time Keys, and Commit-and-Reveal protocol, it ensures attribution of traded data and allows users to choose exactly who can and cannot touch the data they share."
+      - text: "The project is currently in development, and I am working alongside 2 PhD students and 1 post-doctorate student to bring Membrane to the world. A paper with our methods is currently underway to be published in a conference hosted by IEEE."
     links:
-      - text: "fixes it"
-        url: 
+      - text: "Check out our progress on GitHub"
+        url: https://github.com/cshapard26/Membrane
   
   p3:
-    heading: "Backed by world-renowned investors"
+    heading: "Book Folding Commissions"
+    url: https://www.coopshap.com/bookfolding
     content:
-      - text: "I don't actually have any, but check out this logo I made. It's the initials CS, but it looks like a fish or something."
+      - text: "Book folding is the art of cutting and folding the pages of a book to bring out a three-dimensional image, and it is one of my favorite hobbies. They say a picture is worth a thousand words, so why not turn a thousand words into a picture?"
+      - text: "The process is very time consuming, yet surprisingly soothing. Each page is hand-marked, cut, and folded, often more than twenty times per page depending on the desired detail. A simple name usually takes around eight hours. Something as complex as a face can take well over thirty hours to finish."
+      - text: "Due to interest in my art, I am open to commissions and would happily take on any project you have in mind."
     links:
-      - text: Meet our investors and advisors
-        url: "https://bongo.cat"
-    logos:
-      - identifier: a
-        image: "images/global/sample-logo.svg"
-        alt: "a"
-      - identifier: b
-      - identifier: c
-      - identifier: d
-      - identifier: e
-      - identifier: f
+      - text: Interested? Visit the Book Folding page to learn more and order!
+        url: "https://www.coopshap.com/bookfolding"
+    image1: "images/pages/jontebook.jpg"
+    image2: "images/pages/ronaldobook.jpg"
+    image3: "images/pages/malfoybook.jpg"
+    image4: "images/pages/bookerbook.jpg"
+    image5: "images/pages/crumbook.jpg"
+
   p4:
     heading: "From the blog"
     content:
       - text: "Here is where I would put my blog posts, if I actually had any."
+      
   p5:
     heading: "Stay Up to Date"
     content:
