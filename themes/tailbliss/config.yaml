@@ -49,7 +49,7 @@ params:
   author: Cooper Shapard
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Portfolio and More, v1.1.2"
+  moto: "Portfolio and More, v1.1.3"
   description: ""
   disable_theme_toggle: true
   disable_stay_uptodate: true
