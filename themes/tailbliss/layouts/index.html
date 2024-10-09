@@ -257,12 +257,29 @@
                 <script>
                     let slideIndex = 0;
                     let autoSlideInterval;
-
+                    let images = [];
+                
+                    // Function to preload images
+                    function preloadImages() {
+                        const imageUrls = [
+                            "{{ .Site.Params.P3.image1 }}",
+                            "{{ .Site.Params.P3.Image2 }}",
+                            "{{ .Site.Params.P3.Image3 }}",
+                            "{{ .Site.Params.P3.Image4 }}",
+                            "{{ .Site.Params.P3.Image5 }}"
+                        ];
+                
+                        imageUrls.forEach((url, index) => {
+                            images[index] = new Image();
+                            images[index].src = url;
+                        });
+                    }
+                
                     function showSlides(n) {
                         let i;
                         let slides = document.getElementsByClassName("mySlides");
                         let dots = document.getElementsByClassName("dot");
-                        
+                
                         if (n > slides.length) { 
                             slideIndex = 1; 
                         } else if (n < 1) { 
@@ -270,58 +287,59 @@
                         } else {
                             slideIndex = n;
                         }
-                        
+                
                         for (i = 0; i < slides.length; i++) {
                             slides[i].style.display = "none";  
                         }
-                        
+                
                         for (i = 0; i < dots.length; i++) {
                             dots[i].className = dots[i].className.replace(" active", "");
                         }
-                        
-                        slides[slideIndex-1].style.display = "block";  
-                        dots[slideIndex-1].className += " active";
+                
+                        slides[slideIndex - 1].style.display = "block";  
+                        dots[slideIndex - 1].className += " active";
                     }
-
+                
                     function plusSlides(n) {
                         showSlides(slideIndex += n);
                         restartAutoSlide(); // Resume auto-sliding after manual navigation
                     }
-
+                
                     function currentSlide(n) {
                         showSlides(slideIndex = n);
                         restartAutoSlide(); // Resume auto-sliding after manual navigation
                     }
-
+                
                     function autoSlides() {
                         slideIndex++;
                         showSlides(slideIndex);
                     }
-
+                
                     function restartAutoSlide() {
                         clearInterval(autoSlideInterval); // Clear any existing intervals
                         autoSlideInterval = setInterval(autoSlides, 5000); // Restart auto-sliding
                     }
-
+                
                     document.addEventListener('DOMContentLoaded', function() {
+                        // Preload images
+                        preloadImages();
+                
                         // Initialize slideshow
                         showSlides(slideIndex = 1);
-
+                
                         // Start auto-slide
                         restartAutoSlide();
-
+                
                         // Manual slide controls
                         document.getElementById('prev').addEventListener('click', function() {
                             plusSlides(-1);
                         });
-
+                
                         document.getElementById('next').addEventListener('click', function() {
                             plusSlides(1);
                         });
                     });
-
-
-                    </script>
+                </script>
                 </div>
             <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
                 <div class="md:pt-12 sm:pt-6 lg:pt-20">
