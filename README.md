@@ -1,2 +1,2 @@
 # cshapard26.github.io
-Website theme: [Tailbliss](https://github.com/nusserstudios/tailbliss). Go check them out!
+Website theme derived from: [Tailbliss](https://github.com/nusserstudios/tailbliss). Go check them out!
