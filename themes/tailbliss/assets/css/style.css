@@ -4864,6 +4864,16 @@ EmojiSymbols;
   transform-origin: center; /* Optional: ensures the image flips around its center */
 }
 
+.bluedarkgreyseparator {
+  background-image: url('/transitions/darkgreyblue.jpg'); /* Original pattern */
+  background-repeat: repeat;
+  height: 70px; /* Adjust the height as needed */
+  width: 100%; /* Ensures it spans the full width of the container */
+  background-size: 320px 70px; /* Adjust if needed */
+  transform: rotate(180deg); /* Flips the image upside down */
+  transform-origin: center; /* Optional: ensures the image flips around its center */
+}
+
 .greygreenseparator {
   background-image: url('/transitions/greygreen.jpg'); /* Replace with the path to your JPG */
   background-repeat: repeat; /* Ensures the image repeats across the whole element */

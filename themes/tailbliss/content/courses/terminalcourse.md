@@ -1,9 +1,15 @@
 ---
 title: "Conquering the Terminal"
-date: 2024-09-18T03:10:36.000Z
+date: 2024-09-02T16:22:36+08:00
 draft: false
 language: en
-description: Courses
+featured_image: ../assets/images/featured/command-line.png
+display_image: true
+summary: A know-nothing introduction to the terminal and basic commands to get you started
+description: 
+author: Cooper
+authorimage: ../assets/images/global/author.webp
+categories: Courses
 tags: ["Course", "ECE1181"]
 ---
 # Overview

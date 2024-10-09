@@ -4,12 +4,12 @@ date: 2024-09-25T23:04:36+08:00
 draft: false
 language: en
 featured_image: ../assets/images/featured/pixel-art-trophy.png
-summary: Won the SMU Maguire Center Ethics Essay contest, ranking 1st among SMU undergratuates across all majors.
-description: My experience, thoughts, and motivation behind winning first prize in SMU's Maguire Ethics Essay Contest.
+display_image: false
+summary: My experience, thoughts, and motivation behind winning first prize in SMU's Maguire Ethics Essay Contest
 author: Cooper
 authorimage: ../assets/images/global/author.webp
 categories: Blog
-tags: Blog, Essay
+tags: [Blog, Prose, Reflection]
 ---
 
 # Overview

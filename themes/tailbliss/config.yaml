@@ -49,8 +49,8 @@ params:
   author: Cooper Shapard
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Portfolio and More, v1.0.3"
-  description: "For Lab section, visit ECE1181 in the Labs tab"
+  moto: "Portfolio and More, v1.1.2"
+  description: ""
   disable_theme_toggle: true
   disable_stay_uptodate: true
 
@@ -94,9 +94,9 @@ params:
     image5: "images/pages/crumbook.jpg"
 
   p4:
-    heading: "From the blog"
+    heading: "Recent Posts"
     content:
-      - text: "Here is where I would put my blog posts, if I actually had any."
+      - text: "Find more by clicking the tags or viewing a category in the top right"
       
   p5:
     heading: "Stay Up to Date"

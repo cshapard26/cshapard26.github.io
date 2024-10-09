@@ -7,7 +7,9 @@
                     {{ .Title }}
                 </h1>
             </span>
+            <div class="bluedarkgreyseparator"></div>
         </header>
+        
         {{ with .Content }}
         <div class="max-w-2xl px-6 mx-auto mt-6 prose dark:prose-invert dark:text-white">
             {{- . -}}
@@ -17,7 +19,6 @@
         {{ partial "posts-template.html" . }}
     </article>
     <div class="max-w-xl mx-auto my-16">
-        <div>Hello</div>
         {{ partial "pagination" . }}
     </div>
 </main>
