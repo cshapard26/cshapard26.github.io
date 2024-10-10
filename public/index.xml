@@ -2,60 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CooperSense</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.coopshap.com/</link>
     <description>Recent content on CooperSense</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Feb 2024 23:02:03 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Sep 2024 23:04:36 +0800</lastBuildDate><atom:link href="https://www.coopshap.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A Test Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Fri, 23 Feb 2024 23:02:03 -0600</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>Formatting Example:&#xA;.global _start _start: LDR R1, =_test MOV R3, #0x1, LSL 2 STR R0, [R1, #0x2]! ADD R2, R1, R3 .data _test: .ascii &amp;#34;Test!&amp;#34; </description>
+      <title>Winning The SMU Ethics Essay Contest</title>
+      <link>https://www.coopshap.com/blog/ethics-essay-post/</link>
+      <pubDate>Wed, 25 Sep 2024 23:04:36 +0800</pubDate>
+      
+      <guid>https://www.coopshap.com/blog/ethics-essay-post/</guid>
+      <description>My experience, thoughts, and motivation behind winning first prize in SMU&amp;rsquo;s Maguire Ethics Essay Contest</description>
     </item>
+    
+    <item>
+      <title>Conquering the Terminal</title>
+      <link>https://www.coopshap.com/courses/terminalcourse/</link>
+      <pubDate>Mon, 02 Sep 2024 16:22:36 +0800</pubDate>
+      
+      <guid>https://www.coopshap.com/courses/terminalcourse/</guid>
+      <description>A know-nothing introduction to the terminal and basic commands to get you started</description>
+    </item>
+    
+    <item>
+      <title>Book Folding</title>
+      <link>https://www.coopshap.com/bookfolding/</link>
+      <pubDate>Sun, 01 Sep 2024 03:10:36 +0000</pubDate>
+      
+      <guid>https://www.coopshap.com/bookfolding/</guid>
+      <description>I have yet to build this section of the website. For questions or inquiries about book folding commissions, please email me at coopershapard@duck.com!
+I also donate 20% of all book folding profits directly to Readers 2 Leaders, a Dallas-centered nonprofit that equips students for success through the power of reading.
+If you have another book/reading-based charity you would like me to donate to, please include it in your order and I will donate to them instead1!</description>
+    </item>
+    
+    <item>
+      <title>Placeholder</title>
+      <link>https://www.coopshap.com/projects/placeholder/</link>
+      <pubDate>Tue, 09 Jul 2024 16:22:36 +0800</pubDate>
+      
+      <guid>https://www.coopshap.com/projects/placeholder/</guid>
+      <description>No posts on my projects yet, but expect some devlogs coming soon!</description>
+    </item>
+    
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://www.coopshap.com/about/</link>
       <pubDate>Mon, 18 Dec 2023 03:10:36 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      
+      <guid>https://www.coopshap.com/about/</guid>
       <description>This is where I would tell you about the website and why I built it.</description>
     </item>
+    
     <item>
-      <title>Blog</title>
-      <link>http://localhost:1313/blog/</link>
-      <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
-      <guid>http://localhost:1313/blog/</guid>
-      <description>Here is where I would store my posts. I may not have a blog in the final website, but it&amp;rsquo;s here for now</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description>This is where I would put my collection of projects. </description>
-    </item>
-    <item>
-      <title>Morals</title>
-      <link>http://localhost:1313/morals/</link>
+      <title>Policy</title>
+      <link>https://www.coopshap.com/policy/</link>
       <pubDate>Fri, 18 Dec 2020 03:10:36 +0000</pubDate>
-      <guid>http://localhost:1313/morals/</guid>
+      
+      <guid>https://www.coopshap.com/policy/</guid>
       <description>Nothing here yet</description>
     </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/blog-post-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blog-post-1/</guid>
-      <description> </description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/news-post-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/news-post-1/</guid>
-      <description> </description>
-    </item>
+    
   </channel>
 </rss>

@@ -2,26 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-    <lastmod>2024-02-23T23:02:03-06:00</lastmod>
+    <loc>https://www.coopshap.com/tags/blog/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-02-23T23:02:03-06:00</lastmod>
+    <loc>https://www.coopshap.com/categories/blog/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-02-23T23:02:03-06:00</lastmod>
+    <loc>https://www.coopshap.com/blog/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2021-12-18T03:10:36+00:00</lastmod>
+    <loc>https://www.coopshap.com/categories/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/blog-post-1/</loc>
+    <loc>https://www.coopshap.com/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/news-post-1/</loc>
+    <loc>https://www.coopshap.com/tags/prose/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://www.coopshap.com/tags/reflection/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://www.coopshap.com/tags/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://www.coopshap.com/blog/ethics-essay-post/</loc>
+    <lastmod>2024-09-25T23:04:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/courses/terminalcourse/</loc>
+    <lastmod>2024-09-02T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/tags/course/</loc>
+    <lastmod>2024-09-02T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/categories/courses/</loc>
+    <lastmod>2024-09-02T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/courses/</loc>
+    <lastmod>2024-09-02T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/tags/ece1181/</loc>
+    <lastmod>2024-09-02T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/bookfolding/</loc>
+    <lastmod>2024-09-01T03:10:36+00:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/tags/devlog/</loc>
+    <lastmod>2024-07-09T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/projects/placeholder/</loc>
+    <lastmod>2024-07-09T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/tags/project/</loc>
+    <lastmod>2024-07-09T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/projects/</loc>
+    <lastmod>2024-07-09T16:22:36+08:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/about/</loc>
+    <lastmod>2023-12-18T03:10:36+00:00</lastmod>
+  </url><url>
+    <loc>https://www.coopshap.com/policy/</loc>
+    <lastmod>2020-12-18T03:10:36+00:00</lastmod>
   </url>
 </urlset>

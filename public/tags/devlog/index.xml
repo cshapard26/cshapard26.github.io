@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devlog on CooperSense</title>
+    <link>https://www.coopshap.com/tags/devlog/</link>
+    <description>Recent content in Devlog on CooperSense</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Jul 2024 16:22:36 +0800</lastBuildDate><atom:link href="https://www.coopshap.com/tags/devlog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Placeholder</title>
+      <link>https://www.coopshap.com/projects/placeholder/</link>
+      <pubDate>Tue, 09 Jul 2024 16:22:36 +0800</pubDate>
+      
+      <guid>https://www.coopshap.com/projects/placeholder/</guid>
+      <description>No posts on my projects yet, but expect some devlogs coming soon!</description>
+    </item>
+    
+  </channel>
+</rss>

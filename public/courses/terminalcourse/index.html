@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title itemprop="name"> Conquering the Terminal | CooperSense 
+</title>
+<meta name="description" content="" />
+<meta property="og:title" content="Conquering the Terminal | CooperSense" />
+<meta name="twitter:title" content="Conquering the Terminal | CooperSense" />
+<meta itemprop="name" content="Conquering the Terminal | CooperSense" />
+<meta name="application-name" content="Conquering the Terminal | CooperSense" />
+<meta property="og:description"
+      content="" />
+<meta property="og:site_name" content="CooperSense" />
+<meta property="og:url" content="https://www.coopshap.com/courses/terminalcourse/" />
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/assets/images/featured/command-line.png" />
+<meta property="og:image:secure_url" content="https://www.coopshap.com/assets/images/featured/command-line.png" />
+<meta property="og:type" content="article" />
+
+<script>
+    
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
+
+
+
+<link rel="stylesheet" href="/css/style.min.04d5bc6cb9da97d5c5d524a6bd09a355fcc945ba2fdebefca4f7e8d528b6a8f6.css" integrity="sha256-BNW8bLnal9XF1SSmvQmjVfzJRbov3r78pPfo1Si2qPY=" />
+
+</head>
+
+<body class="bg-zinc-100 dark:bg-gray-800">
+    <div class="top-0 z-50 w-full text-gray-200 bg-gray-900 dark:bg-gray-800 border-2 border-gray-900 md:sticky border-b-stone-200/10">
+    <div x-data="{ open: false }"
+         class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between p-4">
+            <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
+                <img src="/images/coopshaplogo-large.png"
+                     class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70"
+                     alt="CooperSense Logo" />
+                <div
+                     class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 uppercase transition-colors group-hover:text-gray-400/60">
+                    CooperSense</div>
+            </a>
+            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}"
+             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+            
+            
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
+                    <span>Labs</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                     x-transition:enter-start="transform opacity-0 scale-95"
+                     x-transition:enter-end="transform opacity-100 scale-100"
+                     x-transition:leave="transition ease-in duration-75"
+                     x-transition:leave-start="transform opacity-100 scale-100"
+                     x-transition:leave-end="transform opacity-0 scale-95"
+                     class="absolute right-0 z-30 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                    <div class="px-2 py-2 text-primary-900 bg-white rounded-md shadow">
+                        
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline"
+                           href="https://www.coopshap.com/ECE1181/">ECE1181</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                href="https://www.coopshap.com/courses/" title="Courses">
+                Courses
+            </a>
+            
+            
+            
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                href="https://www.coopshap.com/blog/" title="Blog">
+                Blog
+            </a>
+            
+            
+            
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                href="https://www.coopshap.com/projects/" title="Projects">
+                Projects
+            </a>
+            
+            
+            
+        </nav>
+    </div>
+</div>
+    
+<article>
+  <header class="mb-4 bg-primary-600">
+    <span class="py-96">
+      <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
+        Conquering the Terminal
+      </h1>
+    </span>
+    <div class="bluedarkgreyseparator"></div>
+  </header>
+  
+    
+  <div class="bg-gray-900 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto mt-8 mb-2">
+      <div class="px-6">
+         
+          
+          
+          
+          
+          
+          
+          <img src="/../assets/images/featured/command-line_hu71547cc7e42baa67c77914e9f2b6e10b_448734_1500x0_resize_q80_h2_box_3.webp" srcset=", /../assets/images/featured/command-line_hu71547cc7e42baa67c77914e9f2b6e10b_448734_400x0_resize_q80_h2_box_3.webp 400w, /../assets/images/featured/command-line_hu71547cc7e42baa67c77914e9f2b6e10b_448734_550x0_resize_q80_h2_box_3.webp 550w, /../assets/images/featured/command-line_hu71547cc7e42baa67c77914e9f2b6e10b_448734_900x0_resize_q80_h2_box_3.webp 768w, /../assets/images/featured/command-line_hu71547cc7e42baa67c77914e9f2b6e10b_448734_1500x0_resize_q80_h2_box_3.webp 1100w"
+              class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
+              width="100%" alt="" />
+          
+          
+        
+      </div>
+    </div>
+
+    
+      <div class="max-w-4xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white"> 
+        <div style="background-color: #333333; padding: 20px; border-radius: 8px;">
+        <h1 id="overview">Overview</h1>
+<p>If you have never worked with the Command Line before, it can seem very daunting at first. Even if you have been coding for years, your first experience with the Command Line can be a shocking reality check into just how deep the CS Iceberg goes.</p>
+<p>Right now, everything may seem like a jumble of letters, commands, and confusing sequences, but the Command Line is made to be logical. You don&rsquo;t need to memorize everything. In fact, <strong>you will only need to know about 5-6 commands to be successful in most classes.</strong> Any additional commands will probably need to be looked up in the moment, as many have very specific input parameters.</p>
+<h1 id="terminology">Terminology</h1>
+<p>Before we dive into the exact commands, it is important to know what the Command Line is, and how it differs from the Terminal, Shell, and Console.</p>
+<p>Most people use these four terms interchangeably. And, to be fair, they are very similar. If you confuse them, don&rsquo;t worry, people will still know what you are talking about, and they all refer to the same thing. So here is the layman definitions of these interfaces:</p>
+<h3 id="console">Console</h3>
+<p>The console was originally the only way to access a computer. It refers to the physical components that let you interact with the device. Technically, your keyboard and mouse are part of the console, since you use them to interact with your screen. Nowadays, people usually refer to the console like a Terminal or a way for the computer to show you information (like the console in VSCode).</p>
+<h3 id="terminal">Terminal</h3>
+<p>The terminal is an app on your computer that gives you access to the Shell. All computers have a Terminal app installed by default.</p>
+<h3 id="shell">Shell</h3>
+<p>The shell is the actual computer part of the console. It is what reads, processes, and executes commands. It is generally considered the &ldquo;core&rdquo; of the console/terminal/command-line system.</p>
+<h3 id="command-line--cli">Command Line / CLI</h3>
+<p>The Command Line, or CLI (for Command Line Interface) is the place in the shell where you input commands. It generally has the character <code>&gt;</code> or <code>$</code> preceding it to show where to type, as well as listing the current directory. You will often hear that a piece of software has &ldquo;Command Line Interface/CLI&rdquo;, which just means you can interact with the app through the command line.</p>
+<h3 id="wsl-windows-subsystem-linux">WSL (Windows Subsystem Linux)</h3>
+<p>Most popular commands originally stem from the Linux operating system. Mac uses these commands, which simplifies the Terminal quite a bit. However, Windows computers don&rsquo;t use these same commands (besides a few of the most basic ones, including the ones below). Thus, to streamline the process, it is highly suggested that you download <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL</a>. This is a new terminal for your computer that runs on a Linux system so you can use all the native Linux commands. When you want to use it, be sure to launch the &ldquo;WSL&rdquo; app and not the &ldquo;PowerShell&rdquo; or &ldquo;Terminal&rdquo; apps.</p>
+<h1 id="entering-the-terminal">Entering the Terminal</h1>
+<p>So, now that you know what the Command Line is, let&rsquo;s move on to how to use it.</p>
+<p>For the first interactive part of this lab, go ahead and open up <code>Terminal</code> if you are on Mac, or <code>Windows PowerShell</code> if you are on Windows. These come preinstalled on your computer, and they can be found with the search bar.</p>
+<p>You should see a line that looks like this if you are on Windows (it will look similarly, but not exactly the same on Mac):</p>
+<pre tabindex="0"><code>C:\Users\YourName&gt;
+</code></pre><p>where <code>YourName</code> is the name of your computer.</p>
+<p>This line is called the &ldquo;prompt.&rdquo; It will show up before every line that you type (sometimes it will show different text, and that&rsquo;s okay! It just means you are in a different place). If the command line does not have a prompt, then that means it is loading or processing a big command. Give it a few seconds and it should pop up again.</p>
+<h1 id="viewing-directories-and-files">Viewing Directories and Files</h1>
+<p>When you open up the command line, you are placed in something called a <strong>directory</strong>. <!-- raw HTML omitted -->A directory is just a fancy name for a folder.<!-- raw HTML omitted --> You usually start in the Home directory, which you can find on your computer in the File Explorer (or Finder on Mac). The home directory is the base folder your computer uses as reference. It is the directory your computer opens when first opening the Command Line.</p>
+<h2 id="viewing-directories">Viewing Directories</h2>
+<p>To see what directory you are in, type out <code>pwd</code> and click Enter.</p>
+<hr>
+<h3 id="command">Command</h3>
+<p><code>pwd</code> — Displays the name of the current directory. It stands for Print Working Directory.</p>
+<hr>
+<p>Congratulations! You just executed your first Linux command! You should see something that looks like this (may look slightly different for Mac):</p>
+<pre tabindex="0"><code>PS C:\Users\YourName&gt; pwd
+
+Path
+----
+C:\Users\YourName
+
+
+PS C:\Users\YourName&gt;
+</code></pre><p>If you get a red error message instead, don&rsquo;t worry. Odds are you are just using a command line without Linux commands installed. If you are on Windows, make sure you are in POWERSHELL, not TERMINAL. If that still doesn&rsquo;t work, check out the <a href="#wsl-windows-subsystem-linux">WSL (Windows Subsystem Linux)</a> section for more info.</p>
+<p>So, what just happened? Basically, you used the Command Line to tell the computer that you wanted the name of your current directory/folder. The computer processed your request (the <code>pwd</code> command), and printed out the result. Then, it opened up the command line again and waited for a new command (which is why you see the C:\\ line at the bottom).</p>
+<h2 id="viewing-files">Viewing Files</h2>
+<p>Now, let&rsquo;s see what is inside the current directory (you can always check what the &ldquo;current directory&rdquo; is using the <code>pwd</code> command). To list the files in the current directory, use the <code>ls</code> command.</p>
+<hr>
+<h3 id="command-1">Command</h3>
+<p><code>ls</code> — Displays the contents of the current directory. It is short for &ldquo;LiSt&rdquo; (as in &ldquo;list&rdquo; the files).</p>
+<hr>
+<p>You should see something like this (may vary slightly on Mac):</p>
+<pre tabindex="0"><code>Mode                 LastWriteTime         Length Name
+\----                 -------------         ------ ----
+d-r---          3/2/2023   6:49 PM                Contacts
+d-r---         1/31/2024  12:26 AM                Desktop
+d-r---         1/24/2024   8:59 PM                Documents
+d-r---         2/11/2024   6:19 PM                Downloads
+d-r---          3/2/2023   6:49 PM                Favorites
+</code></pre><p>(But yours will likely include many more files)</p>
+<p>The <code>ls</code> command is going to be your favorite and most used command from now on. It will help you navigate through directories, find out where you are, and display useful information about files.</p>
+<p>Here are some important things to note about using <code>ls</code>. If you are using <code>Windows PowerShell</code> and not <code>WSL</code>, then some of these next notes won&rsquo;t apply to you. I highly suggest making the switch so you can practice seeing these things. Here are some important notes about how <code>ls</code> displays files with color coding:</p>
+<ul>
+<li>Blue — Directory</li>
+<li>White/Black — Code file</li>
+<li>Green — Executable</li>
+</ul>
+<h2 id="changing-directories">Changing Directories</h2>
+<p>Odds are, when you used the <code>ls</code> command in your home directory, your <code>Downloads</code> file was displayed in blue text. That means that <code>Downloads</code> is a directory! Just like the home directory, you can enter the <code>Downloads</code> directory and see what&rsquo;s inside. To do that, we use the command <code>cd</code>.</p>
+<hr>
+<h3 id="command-2">Command</h3>
+<p><code>cd fileName</code> — Changes the directory that you are in. It stands for &ldquo;Change Directory.&rdquo;</p>
+<hr>
+<p>There is something different about the <code>cd</code> command. Instead of just typing the command, you have to add something else to the line. This other part is called an &ldquo;argument&rdquo; (you may recognize the term if you are familiar with functions in coding). An argument is a value that you give to the command to tell it what to do. In this case, you are giving the <code>cd</code> command the argument <code>fileName</code>, where <code>fileName</code> is the name of the directory you want to go to.</p>
+<p>So, if you want to go to the <code>Downloads</code> folder, you would type the command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd Downloads
+</code></pre></div><p>If it worked correctly, some things should change. First, the prompt should change from
+<code>C:\Users\YourName</code>
+to
+<code>C:\Users\YourName\Downloads</code></p>
+<p>Another thing you should notice is that nothing is outputted after you enter the command. That&rsquo;s okay. Not all commands print out responses, but if it doesn&rsquo;t give you a big red error, then odds are that it worked. However, to make sure, try printing out the name of the directory. Do you remember what the command to print the name of the directory is? (Hint: it&rsquo;s the first one you learned).</p>
+<p>Two important things to note:</p>
+<ol>
+<li>You can only <code>cd</code> into directories (always listed in blue). If you try to <code>cd</code> into a code file, you will get an error.</li>
+<li>If you type out the first couple letters of the file name and click <code>Tab</code>, then the Commands Line will autofill the rest of the file name. How handy! This will help you avoid making typos and speed up the process, especially for long fine names. (One thing to note is that if multiple files have the same few letters, you can keep hitting <code>Tab</code> to cycle through all of your options).</li>
+</ol>
+<p>Now that you are in the <code>Downloads</code> directory, try listing out the files. Do you remember the command? (Hint: it is the second one we learned). You should get an output similar to the first example, but this time, it only lists files in the Downloads file on your computer. You can actually check this by going to File Explorer (Windows) or Finder (Mac) and comparing your results. They may not be in the same order, but you should see all the files listed there!</p>
+<h1 id="creating-directories-and-files">Creating Directories and Files</h1>
+<h2 id="creating-directories">Creating Directories</h2>
+<p>Since we now know how to go into a directory, let&rsquo;s learn how to make our own. The command for creating your own directory is <code>mkdir directoryName</code>, where directoryName is what you want to call the new directory. You can call it whatever you like (or just <code>FirstNameLastName</code> for simplicity).</p>
+<hr>
+<h3 id="command-3">Command</h3>
+<p><code>mkdir directoryName</code> — Creates a directory inside the current directory. It stands for &ldquo;MaKe DIRectory.&rdquo;</p>
+<hr>
+<p>If you list out the files again, you should see your new, shiny blue directory among the list. Congrats! It&rsquo;s your very own directory. There are many like it, but this one is yours. Now, go ahead and enter into your new directory. Do you remember the command? (Hint: it is the third one we learned).</p>
+<h2 id="creating-files">Creating Files</h2>
+<p>Now that you&rsquo;re inside your new directory, try listing out the files using the command we learned. You should notice something strange: nothing gets displayed. That&rsquo;s because when we create a directory, it starts off empty. How sad! Let&rsquo;s make a file to fill our new directory. The command to make a new file is <code>touch fileName</code>, where fileName is the name of the file we want to create (including the extension, aka: .s .py .txt .mp3 etc). You can call it whatever you like (or just <code>myFile.txt</code> for simplicity).</p>
+<hr>
+<h3 id="command-4">Command</h3>
+<p><code>touch fileName</code> — Creates a code file inside the current directory. Think about it as &ldquo;putting your fingerprints on a new file.&rdquo;</p>
+<hr>
+<p>Beautiful! Go ahead and list the contents one more time to make sure your new file is in there (it should be in White text. If it&rsquo;s blue, you made a directory by mistake! Make sure to use <code>touch</code> and not <code>mkdir</code>).</p>
+<h2 id="leaving-directories">Leaving Directories</h2>
+<p>Now that you&rsquo;ve finished making your own directory and file, let&rsquo;s learn how to go back up into the <code>Downloads</code> directory. If you try to use <code>cd Downloads</code>, you will see that you get an error. That&rsquo;s because <code>Downloads</code> is the &ldquo;parent&rdquo; directory. Think of it as a set of Russian Nesting Dolls, with each directory inside of each other. Each doll/directory can only see what is inside of itself, not what&rsquo;s above it (the &ldquo;parent&rdquo; doll if you will). So, to go &ldquo;up&rdquo; a directory, we need a special command: <code>cd ..</code> (that&rsquo;s two periods, to be clear)</p>
+<hr>
+<h3 id="command-5">Command</h3>
+<p><code>cd ..</code> — Go &ldquo;up&rdquo; one directory (to the parent directory). <code>..</code> always stands for the parent of a directory.</p>
+<hr>
+<p>You should be back in <code>Downloads</code>! Try using the command again to get back to your Home directory (<code>C:\Users\YourName</code>).</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Congratulations! You just learned all of the basic Linux commands you will need for this course! There are a few more that you will learn later on (including <code>ssh</code>), but these are the main ones and the ones you should know by heart. I&rsquo;ll leave you with just one more command, but this one is just for aesthetics. Entering <code>clear</code> will clear the terminal, leaving it nice and sparkly! Don&rsquo;t worry, this doesn&rsquo;t change which directory you are in, and it doesn&rsquo;t mess with your files. It just removes the clutter from the screen.</p>
+<hr>
+<h3 id="command-6">Command</h3>
+<p><code>clear</code> — Clear the old commands on the terminal screen. Useful to hide error messages and remove clutter.</p>
+<hr>
+<p>That should be it for this section of Lab 0. But before you move on to the next section, check the <code>Downloads</code> folder of your computer using Finder or File Explorer. See if you can find the directory and file that you made. Now you can see how to use the Command Line to affect real files on your computer!</p>
+<h1 id="whats-next">What&rsquo;s Next?</h1>
+<p>Want to start putting your Command Line knowledge to good use? One of my favorite resources is <a href="https://overthewire.org/wargames/bandit/">OverTheWire</a>, which is a game built around using the terminal. Though it is mainly used to train Red Team Cybersecurity hackers, the beginner stages are a great intro to the terminal.</p>
+<p>I suggest working your way through at least level 8 to start feeling comfortable writing commands. You will start out with <code>ssh</code>, which lets you connect to computers other than your own. Each level has some handy resources with commands you might need.</p>
+<p>The point of the game is finding information on your own like a real coder. This means Googling for information, testing things that may not work, and finding out how to use commands in practice. Though we encourage you to try and find solutions on your own, there are plenty of people who are able to help you and will work through it with you step by step!</p>
+<h1 id="feedback">Feedback</h1>
+<p>Please give me some feedback on this course! Things you liked, things you didn&rsquo;t like, things you want to see in the next one. Shoot me an email at <a href="mailto:coopershapard@duck.com">coopershapard@duck.com</a> with any feedback you have!</p>
+
+      </div>
+    </div>
+    
+  </div>
+</article>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="/js/darkmode.js" defer></script>
+<div class="greydarkgreyseparator"></div>
+<footer class="bg-gray-900 dark:bg-gray-900">
+    <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+            
+            <div class="px-5 py-2">
+                <a href="https://www.coopshap.com/about/" class="text-base text-gray-400 hover:text-gray-300">About</a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a href="https://www.coopshap.com/policy/" class="text-base text-gray-400 hover:text-gray-300">Policy</a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a href="https://venmo.com/the-singularity" class="text-base text-gray-400 hover:text-gray-300">Donate</a>
+            </div>
+            
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+            
+            
+            
+            <a href="https://github.com/cshapard26" class="text-gray-400 hover:text-gray-300">
+                <span class="sr-only">GitHub</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                          clip-rule="evenodd" />
+                </svg>
+            </a>
+            
+            
+            <a href="https://www.linkedin.com/in/coopershapard/" class="text-gray-400 hover:text-gray-300">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                          d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z"
+                          clip-rule="evenodd" />
+                </svg>
+            </a>
+            
+            
+        
+            
+        </div>
+        <a href="https://github.com/cshapard26/cshapard26.github.io" class="hover:underline hover:text-primary-600">
+            <p class="mt-8 text-base text-center text-gray-400">&copy; 2024
+                CooperSense. All rights
+                reserved.
+            </p>
+        </a>
+    </div>
+</footer>
+</body>
+
+</html>

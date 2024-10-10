@@ -4,7 +4,7 @@ date: 2024-09-02T16:22:36+08:00
 draft: false
 language: en
 featured_image: ../assets/images/featured/command-line.png
-display_image: true
+post_image: ../assets/images/featured/command-line.png
 summary: A know-nothing introduction to the terminal and basic commands to get you started
 description: 
 author: Cooper

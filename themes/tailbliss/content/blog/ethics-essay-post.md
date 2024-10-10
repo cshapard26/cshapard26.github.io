@@ -3,8 +3,8 @@ title: "Winning The SMU Ethics Essay Contest"
 date: 2024-09-25T23:04:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/featured/pixel-art-trophy.png
-display_image: false
+post_image: ../assets/images/featured/pixel-art-trophy.png
+featured_image: 
 summary: My experience, thoughts, and motivation behind winning first prize in SMU's Maguire Ethics Essay Contest
 author: Cooper
 authorimage: ../assets/images/global/author.webp
