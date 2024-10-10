@@ -1,6 +1,6 @@
 ---
 title: "Winning The SMU Ethics Essay Contest"
-date: 2024-09-25T23:04:36+08:00
+date: 2024-10-05
 draft: false
 language: en
 post_image: ../assets/images/featured/pixel-art-trophy.png

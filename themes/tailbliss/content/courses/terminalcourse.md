@@ -1,6 +1,6 @@
 ---
 title: "Conquering the Terminal"
-date: 2024-09-02T16:22:36+08:00
+date: 2024-09-14
 draft: false
 language: en
 featured_image: ../assets/images/featured/command-line.png
