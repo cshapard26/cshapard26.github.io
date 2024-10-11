@@ -1,6 +1,6 @@
 ---
 title: "Introducing... Magnet Game! Devlog #1"
-date: 2024-09-18
+date: 2024-09-22
 draft: false
 language: en
 post_image: ../assets/images/featured/magnet-game-arrows.png
