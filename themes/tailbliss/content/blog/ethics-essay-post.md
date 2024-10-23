@@ -9,7 +9,7 @@ summary: My experience, thoughts, and motivation behind winning first prize in S
 author: Cooper
 authorimage: ../assets/images/global/author.webp
 categories: Blog
-tags: [Blog, Prose, Reflection]
+tags: [Prose, Reflection]
 ---
 
 # Overview
